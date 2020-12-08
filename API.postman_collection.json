@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "f9621901-44ee-45b7-92c4-7cb42d5a4415",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetItemFila",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44378/Items",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44378",
+					"path": [
+						"Items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddItemFila",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n   {\r\n      \"moeda\":\"USD\",\r\n      \"data_inicio\":\"2010-01-01\",\r\n      \"data_fim\":\"2010-12-01\"\r\n   },\r\n   {\r\n      \"moeda\":\"EUR\",\r\n      \"data_inicio\":\"2020-01-01\",\r\n      \"data_fim\":\"2010-12-01\"\r\n   },\r\n   {\r\n      \"moeda\":\"JPY\",\r\n      \"data_inicio\":\"2000-03-11\",\r\n      \"data_fim\":\"2000-03-30\"\r\n   }\r\n]"
+				},
+				"url": {
+					"raw": "https://localhost:44378/Items",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44378",
+					"path": [
+						"Items"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
